@@ -1,0 +1,1008 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;;
+}
+*{
+    box-sizing: border-box;
+
+}
+html{
+    /*  HACK */
+    font-size: 62.5%;
+    /* nếu để 100% thì 1rem = 16px , nếu chọn font-size:12px thì chia ra nữa , sẽ khó khắn , nên dùng 62,5%
+    , => 1rem = 10px => 12px = 1.2rem */
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.overlay {
+    width: 100%;
+    background-color: #f5f5f5;
+    height: 81vh;
+}
+.container
+{
+    width: 85%;
+    margin: auto;
+    background-color: #f5f5f5;
+    padding-top: 15px;
+}
+.container-item
+{ 
+    display: flex;
+}
+.container-img-product
+{
+    width: 30%;
+    background-color: #fff;
+}
+.container-img-product-img
+{
+    width: 100%;
+    margin: 10px 0 0 15px;
+}
+.container-img-product-img-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-img-product-img-list-item
+{
+    width: 50px;
+}
+.container-img-product-img-list-item:first-child
+{
+    border: 1px solid #d0011b;
+}
+.container-information-product
+{
+    padding-left: 40px;
+    background-color: #fff;
+    width: 70%;
+}
+.container-information-product-like
+{
+    background-color: #ee4d2d;
+    color:#fff;
+    padding:1px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+span.container-information-text-product {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(0,0,0,.8);
+    line-height: 28px;
+}
+.container-information-product-text {
+    padding-top: 15px;
+}
+.container-information-product-vote-star-sold {
+    display: flex;
+}
+.container-information-product-star {
+    color: #ee4d2d;
+    font-size: 17px;
+    padding-right: 30px;
+}
+    .container-information-product-vote {
+    font-size: 18px;
+    color: rgba(0,0,0,.7);
+    margin-right: 30px;
+}
+    .container-information-product-sold {
+    font-size: 18px;
+    color: rgba(0,0,0,0.7);
+}
+
+.all-item-1 {
+    margin-top: 36px;
+}
+span.price-item-1 {
+    font-size: 19px;
+    margin-right: 10px;
+    color: rgba(0,0,0,.7);
+    text-decoration: line-through;
+}
+span.price-item-2 {
+    font-size: 33px;
+    color: #ee4d2d;
+}
+.sale {
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.all-item-2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.sale-img
+{
+    height: 40px;
+    width: 40px;
+    margin-right: 7px;
+}
+.gicungre
+{
+    color:#ee4d2d;
+    font-size: 15px;
+}
+p.giatot {
+    font-size: 14px;
+    color: rgba(0,0,0,.6);
+}
+.ngoi-sao-star
+{
+    color: #ee4d2d;
+    font-size: 15px;
+}
+.item-sale-text
+{
+    color: #757575;
+    font-size: 1.1rem;
+    padding-right: 3px;
+}
+.item-sale-mua3giam1
+{
+    padding:3px;
+    border: 1px solid #ee4d2d ;
+    border-radius: 2px;
+    color:#757575;
+    cursor: pointer;
+}
+.item-sale
+{
+    margin-bottom: 27px;
+}
+p.item-sale-color-while-text {
+    font-size: 15px;
+}
+.soluong_text-1
+{
+    color:#757575;
+    margin-right: 72px;
+    line-height: 27px;
+    font-size: 1.4rem;
+}
+.soluong
+{
+    display: flex;
+    margin-bottom: 40px;
+}
+/* gio hang */
+.cart
+{
+    display: flex;
+    margin-bottom: 15px;
+}
+button.cart_button {
+    cursor: pointer;
+    display: flex;
+    padding:15px 25px;
+    border: 1px solid #ee4d2d;
+    border-radius: 2px;
+    color:#ee4d2d;
+    margin-right: 15px;
+    background-color: rgba(255,87,34,.1);
+}
+button.cart_button:hover
+{
+    background-color: #fff;
+}
+.cart_button-1
+{
+    cursor: pointer;
+    display: flex;
+    padding:15px 25px;
+    border: 1px solid #ee4d2d;
+    border-radius: 2px;
+    color:#fff;
+    margin-right: 15px;
+    background-color: #ee4d2d;
+}
+.cart_button-1:hover
+{
+    background-color: #ec694f;
+}
+.themvaogiohang
+{
+    font-size: 16px;
+}
+.icon-cart
+{
+    margin-right: 8px;
+}
+.muangay
+{
+
+    color: #fff;
+    font-size: 15px;
+}
+/* trang chu */
+.trang-chu
+{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.trang-chu-1
+{
+    background-image: url(./assets/img/meo.jpg);
+    background-size: cover;
+    padding:10px 15px;
+    border-radius: 3px;
+    font-size: 30px;
+    border-top: 2px solid #ec694f;
+    position: relative;
+    display: none;
+}
+.trang-chu-1:hover
+{
+    background-image: url(./assets/img/gio\ hang.png);
+}
+/* Header  */
+.header{
+    /* width:100%;  trương hợp này không cần dùng width vì header mặc định là display:block nên nó có tính kế thừa , nên width luôn ăn theo html */
+    height:var(--header-height);
+    background-image: linear-gradient(0,#fe6433, #f53e2d); 
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: var(--navbar-height);
+}
+
+.header__navbar-list {
+    list-style: none;
+    /* mặc định thẻ ul có padding-left:40px nên chúng ta 
+    cần bỏ nó đi */
+    padding-left:0;
+    /* mặc định thẻ ul  cũng có margin-top là 10px , nên nó cách mép trên khá xa, nên cho nó nhỏ lại , tầm 5px */
+    margin: 4px 0 0 0 ;
+    display: flex;
+}
+
+.header__navbar-item{
+    margin:0 8px;
+    position: relative;
+    min-height: 25px;
+    padding-left:2px;
+}
+/* Hover ma QR */
+.header__navbar-item--hover-qr:hover .header__QR{
+    display: block;
+}
+.header__QR:hover::before .header__QR{
+    display: block;
+}
+/*  Hover Notify */
+.header__navbar-item-hover--notify:hover .header__notify{
+    display: block;
+}
+.header__QR:hover::before .header__notify{
+    display: block;
+}
+/* CSS user ( tài khoản các nhân) */
+.header__navbar-user{
+  position: relative;
+}
+.header__navbar-user-img{
+    height:22px;
+    width: 22px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0,0.1);
+}
+.header__navbat-user-name{
+    margin-left: 8px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+/* user menu */
+.header__navbar-user:hover .header__navbar-user-menu{
+    display: block;
+}
+.header__navbar-user-menu{
+    position: absolute;
+    top:calc(100% );
+    right:0;
+    padding-left:0;
+    background-color: var(--white-color);
+    z-index: 2;
+    width: 160px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #ccc;
+    display:none;
+    
+}
+.header__navbar-user-item{
+    list-style: none;
+}
+.header__navbar-user-item-border{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header__navbar-user-item a {
+    font-size: 1.4rem;
+    padding:8px 14px;
+    width: 100%;
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 500;
+    display: block;
+}
+.header__navbar-user-item a:hover{
+    background-color: #fafafa;
+}
+.header__navbar-user-menu::after{
+    content: "";
+    position: absolute;
+    top:-28px;
+    right: 8px;
+    border-width: 20px 26px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    z-index: -1;
+} 
+
+.header__navbar-item,
+.header__navbar-item-link{
+    display: inline-block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:var(--white-color);
+    font-weight: 100;
+}
+
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link{
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar-item:hover,
+.header__navbar-item-link:hover,
+.header__navbar-icon-link:hover{
+    color:rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+.header__navbar-item--strong{
+    font-weight: 430;
+}
+.header__navbar-item--separate::after{
+    content:"";
+    position: absolute;
+    height:14px;
+    width:1px;
+    right: -10px;
+    background-color: #fb9086;
+}
+.header__navbar-icon-link{
+    color:var(--white-color);
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding-right: 7px;
+}
+.header__navbar-icon-link:nth-child(2){
+    padding-left:6px
+}
+
+.header__navbar-item--internet{
+    cursor:text;
+    color:var(--white-color);
+}
+/* Header QR */
+.header__QR{
+    width:186px;
+    background-color: var(--white-color);
+    position: absolute;
+    left:8px;
+    top:100%;
+    margin-top:8px;
+    padding:8px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0 0 0 /15%);
+    display: none;
+    animation:  fadein ease-in-out 0.3s;
+    z-index: 3;
+    
+    
+}
+/* tạo 1 lớp giả để khi hover vào thì vẫn nhấn vào đc mã QR , chứ không có lớp giả thì
+    nó bị đứt và khi kéo chuột xuoonggs thì mã QR mất, nên tạo lớp giả để làm cầu nối */
+    .header__QR::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width:100%;
+        height:20px;
+        left:0;
+        top:-16px;
+    }
+
+/* lop gia header-motify*/
+.header__notify::before{
+    content: "";
+    width:calc(100% / 2);
+    height: 20px;
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    right:0;
+    top:-19px;
+}
+/*  lop gia header__motify-arrow */
+.header__notify--arrow::after{
+    content: "";
+    border-width: 20px 26px;
+    border-style:solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -28px;
+    right: 7px; 
+}
+.header__qr-igame{
+    width:100%;
+    border: none;
+}
+.header__qr-app{
+    display: flex;
+    justify-content: space-between;
+}
+.header__qr-app--download{
+    height: 16px;
+}
+.header__qr-link:nth-child(1){
+    margin-left: 11px;
+}
+.header__qr-link:nth-child(2){
+    margin-right: 11px;
+}
+
+/*  header motifycation : thong bao'*/
+
+.header__notify{
+    position: absolute;
+    top:100%;
+    right: 0;
+    width: 404px;
+    background-color:#f3eae8;
+    margin-top:8px;
+    display: none;
+    /* hoc them transform-origin */
+    transform-origin: calc(100% - 32px) top ;
+    animation:headernotifyGrowth 0.2s ease-in ;
+    z-index: 100;
+
+    /* -webkit-animation: headernotifyGrowth 0.2s ease-in ;
+    -moz-animation: headernotifyGrowth 0.2s ease-in ;
+    -o-animation: headernotifyGrowth 0.2s ease-in ;
+
+     ----> animation sẽ thay đổi theo từng trình duyệt , như là google , chrom ....
+          nên cần các như là : moz, o, ms ... để phù hợp với từng trình duyệt để không bị lỗi <------
+     */
+    will-change: opacity , transform;
+    /*  wil-change : nói đơn giản là nói cho web hiểu những thăng nào sẽ thay đổi trong animation */
+    border-radius: 3px;
+}
+
+@keyframes headernotifyGrowth {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header__notify-header{
+    height: 40px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    cursor:default;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.header__notify-header h3{
+    margin: 0;
+    margin-left: 16px;
+    color:rgb(126, 125, 125,0.7);
+    font-size: 1.4rem;
+    user-select: none;
+    width: 100%;
+    line-height: 40px;
+}
+.header__notify-list{
+    padding:0;
+}
+.header__notify-item{
+    box-shadow: 0 1px 2px rgb(126, 125, 125,0.1);
+}
+.header__notify-item:hover{
+    background-color: #f7f7f7;
+}
+.header__notify-link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:12px;
+    text-decoration: none;
+    color:var(--black-color);
+}
+.header__notify-img{
+    width: 48px;
+    object-fit: contain;
+    margin-right:1.25rem;
+}
+
+.header__notify-name{
+    display: block;
+    font-size: 1.4rem;
+    color:var(--text-color);
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+.header__notify-descriotion{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color:#756F6E;
+    margin-top:4px;
+}
+.header__notify-footer{
+    display: flex;
+}
+.header__notify-footer-btn{
+    padding:10px 0;
+    text-decoration: none;
+    color:#333;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+/* CSS Header with search  */
+.header-with-search{
+    height: var(--header-with-search);
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+}
+/* SEARCH MOBILE */
+.header__mobile-search{
+    padding: 0 12px;
+    display: none;
+}
+
+.header__mobile-search-icon{
+    font-size: 2.6rem;
+    color: var(--white-color);
+}
+
+.header__logo{
+    width: 200px;
+}
+.header__logo-link{
+    text-decoration: none;
+    color: transparent;
+}
+.header__logo-image{
+    width: 150px;
+}
+.header__search-checkbox{
+    display: none;
+}
+.header__search-checkbox:checked ~ .header__search{
+      display: block;
+      color:red;
+}
+.header__search{
+    background-color: var(--white-color);
+    height: 40px;
+    flex:1;
+    border-radius: 2px;
+    display: flex;
+}
+.header__search-input{
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* Focus lịch sử tìm kiếm */
+.header__search-input:focus ~.header__search-history{
+    display: block;
+}
+
+/*  CSS lichj sử tìm kiếmmmmmm */
+.header__search-history{
+    position: absolute;
+    left:0;
+    top:42px;
+    background-color: var(--white-color);
+    width: calc(100% - 200px);
+    padding: 0 0 0 10px;
+    box-shadow: 0 2px 2px rgb(235, 232, 232);
+    border-radius: 2px;
+    display: none;
+    z-index: 2;
+}
+.header__search-history-hedding{
+    font-size: 1.4rem;
+    opacity: 0.7;
+    font-weight: 300;
+    margin:0;
+    line-height: 40px;
+}
+
+.header__search-history-list{
+    padding:0;
+    list-style: none;
+    margin:0;
+}
+.header__search-history-text{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.4rem;
+    display: block;
+}
+.header__search-history-item{
+    line-height: 40px;
+}
+
+/* hover */
+.header__search-history-item:hover{
+    background-color: rgb(250, 245, 245);
+}
+
+.header__cart{
+    width: 113px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+/* hover */
+.header__cart:hover .header__cart-list{
+    display: block;
+}
+.header__cart-icon{
+    font-size: 2.5rem;
+    color:var(--white-color);
+    cursor: pointer;
+}
+.header__search-selection{
+    border-left: 1px solid #e8e8e8;
+    padding-left: 14px;
+    position: relative;
+    line-height: 40px;  
+}
+.header__search-selection-label{
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+.header__search-selection-icon{
+    font-size: 1.4rem;
+    color: rgb(226, 226, 226);
+    margin-left: 8px;
+    position: relative;
+    top:1px;
+}
+.header__search-btn{
+    background-color: #f53e2d;
+    border: none;
+    border-radius: 2px;
+    margin-right: -4.5px;
+    width: 60px;
+    height: 34px;
+    margin-left: 16px;
+}
+.header__search-btn-icon{
+    color:var(--white-color);
+    line-height: 35px;
+}
+/*  con trong shop */
+.header__search-option{
+    position: absolute;
+    margin-top:5px;
+    right: -15px;
+    top:92%;
+    width:125px;
+    box-shadow: 0 1px 3px rgb(226, 225, 225);
+    padding:0;
+    border-radius: 2px;
+    display: none;
+    animation: fadein ease-in 0.2s;
+}
+/* lop gia~ */
+.header__search-option::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width:100%;
+    height:20px;
+    background-color: transparent;
+    top:-15px;
+    left:0;
+}
+/* display:block option */
+.header__search-selection:hover .header__search-option{
+    display: block;
+}
+
+.header__search-option-item{
+    background-color: var(--white-color);
+    list-style: none;
+    padding: 1px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.header__search-option-item:first-child{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.header__search-option-item:last-child{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.header__search-option-item:hover{
+    background-color: rgb(243, 241, 241);
+}
+.header__search-option-item span{
+    font-size: 1.4rem;
+    color:var(--text-color);
+}
+.header__search-option-item i {
+    font-size: 1.4rem;
+    color: #f53e2d;
+    padding:0 14px 0 12px;
+}
+/* lich sử giỏ hang``````` */
+.header__cart-list{
+    background-color: var(--white-color);
+    position: absolute;
+    top:calc(100% + 9px);
+    right:28px;
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3.125rem 0  rgb(0, 0, 0,0.2);
+    text-align: center;
+    display: none;
+    cursor: default;
+    z-index: 2;
+
+}
+.header__cart-list--no-cart{
+    padding:24px 0;
+}
+.header__cart-notice{
+    position: absolute;
+    padding: 0px 7px ;
+    text-align: center;
+    background-color: var(--white-color);
+    color: #f53e2d;
+    right: 30px;
+    top:-9px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    border:2px solid #ee4d2d;
+}
+.header__cart-list--no-cart .header__cart-list--no-cart-img,
+.header__cart-list--no-cart .header__cart-list--no-cart-text{
+    display: block;
+}
+.header__cart-list--no-cart-img{
+    width: 60%;
+    display: none;
+    margin : 0 auto;
+    
+}
+.header__cart-list--no-cart-btn::after{
+    content: "";
+    border-width: 20px 26px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -30px;
+    right: 0.7px;
+    cursor: pointer;
+   
+}
+.header__cart-list--no-cart-text{
+    font-size: 1.4rem;
+    padding-top:15px;
+    color: var(--text-color);
+    display: none;
+}
+
+/* cart */
+.header__cart-heading{
+    text-align: start;
+    margin: 12px;
+    font-size: 1.4rem;
+    color:#999;
+    font-weight: 400;
+
+}
+.header__cart-list-item{
+    padding-left: 0;
+    list-style: none;
+    background-color: var(--white-color);
+    cursor: pointer;
+    max-height: 56vh;
+    overflow-y:auto;
+   
+}
+.header__cart-item{
+    display: flex;
+}
+.header__cart-img{
+    width: 42px;
+    height: 42px;
+    margin:12px;
+
+}
+.header__cart-item-info{
+    width: 100%;
+}
+.header__cart-item-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin: 12px 10px 8px 0;
+
+}
+
+
+.header__cart-item-name{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    max-height: 3.6rem;
+    overflow: hidden;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0;
+    float: left;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: left;
+    padding-right: 5px;
+
+}
+.header__cart-item-frice{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #f53e2d
+}
+.header__cart-item-mutiply{
+    font-size: 0.9rem;
+    color: #757575;
+    
+}
+.header__cart-item-qnt{
+    font-size: 1.1rem;
+    color: #757575;
+    margin: 0 3px;
+}
+.header__cart-item-body{
+    text-align: start;
+    font-size: 1.1rem;
+    color: rgb(151, 149, 149);
+    display: flex;
+    justify-content: space-between;
+    margin-right:13px ;
+}
+
+.header__cart-item-delete{
+    font-size: 1.4rem;
+    color: var(--black-color);
+}
+.header__cart-btn{
+    background-color:#f53e2d ;
+    color:var(--white-color);
+    margin-left:8px;
+    position: relative;
+    float: right;
+    margin-right: 13px;
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 3px;
+}
+:root{
+    --primary-color: #EE4D2D;
+    --white-color: #fff;
+    --black-color:#000;
+    --star-gold-color:#ffce3e;
+    --text-color:#333;
+    --border-color:#dbdbdb;
+    --header-height:120px;
+    --navbar-height:32px;
+    --header-with-search: calc(var(--header-height)  -  var(--navbar-height));
+}
+.item-sale-color
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+.color-text
+{
+    color:#757575;
+    margin-right: 76px;
+    font-size: 1.4rem;
+}
+.color-textt
+{
+    color:#757575;
+    margin-right: 105px;
+    font-size: 1.4rem;
+}
+.item-sale-color-1
+{
+    padding:6px 9px;
+    margin:0 2px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.09);
+    outline: none;
+    cursor: pointer;
+}
+.item-sale-color-1:hover
+{
+    background-color: #e7e4e4;
+}
+.soluong_dau
+{
+    padding:5px 11px;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,.09);
+}
+.soluong_dau-1
+{
+    cursor: pointer;
+    padding:5px 9px;
+    border: 1px solid rgba(0,0,0,.09);
+    margin-right: 20px;
+}
+
+.soluong_dau span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#soluong_so
+{
+    cursor: text;
+    margin:0 7px;
+    width: 20px;
+    border: none;
+    text-align: center;
+}
+
+
+
+

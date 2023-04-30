@@ -1,0 +1,204 @@
+/*  Mobile & tablet */
+@media (max-width:1023px){
+    .header{
+        position: fixed;
+        left:0;
+        right:0;
+        top:0;
+        z-index: 10;
+    }
+    .container{
+        margin-top: 94px;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width:1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+    .home-filter__btn:nth-child(2) {
+        min-width: 82px;
+    }
+    .home-filter__btn:nth-child(3) {
+        min-width: 82px;
+    }
+    .home-filter__btn:nth-child(4) {
+        min-width: 82px;
+    }
+    .home-filter__label,
+    .home-filter__page-control,
+    .home-filter__page-num{
+        display: none;
+    }
+    /* Responsive Header */
+    .header__cart{
+        width: 30px;
+        margin: 0 20px 0 30px;
+    }
+    .header__cart-notice{
+        right: -12px;
+    }
+    .header__logo {
+        width: 160px;
+        margin-left: 10px;
+    }
+    .header__search-selection:hover .header__search-option{
+        z-index: 2;
+    }
+    .header__cart-list{
+        right:-13.5px;
+        
+        top:calc(100% + 12px)
+    }
+    .header__cart-item-name{
+        max-height: 1.8rem;
+        -webkit-line-clamp: 1;
+    }
+    .header__cart-list-item{
+      max-height: 35vh;
+    }
+    .header__cart-btn:hover{
+        background-color: #f52613 ;
+    }
+    i.header__cart-icon.fa-solid.fa-cart-shopping {
+        font-size: 2rem;
+    }
+    .grid.wide {
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .header__logo-image{
+        width:130px
+    }
+    .header__search-btn{
+        width: 50px;
+    }
+    .header__QR{
+        width: 130px;
+        padding:8px;
+    }
+    .header__qr-igame{
+        box-shadow: 0 0 5px rgb(224, 221, 221);
+        border-radius: 2px;
+    }
+    .header__qr-link:nth-child(1){
+        margin:0;
+    }
+    .header__qr-link:nth-child(2){
+        margin:0;
+    }
+    .header__qr-app--download{
+        height: 12.5px;
+    }
+   
+
+   
+}
+/* Iphone X */
+@media (min-width:375px) and (max-width:812px){
+    .container{
+        background-color: white;
+    }
+    .footer{
+        min-width: 550px;
+    }
+    /* .header__cart-list{
+        right: -2px;
+    } */
+}
+@media (min-width:375px) and (max-width:767px){
+
+    .header__cart-list{
+        right: -2px;
+    }
+}
+@media (min-width:320px) and (max-width:375px){
+
+    .header__cart-list{
+        right: -2px;
+    }
+}
+@media (min-width:320px) and (max-width:568px){
+    .container{
+        background-color: white;
+    }
+    .footer{
+        min-width: 550px;
+        padding:0 16px;
+    }
+ 
+}
+/*  Mobile */
+@media (max-width:739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .grid__column-2{
+        display: none;
+    }
+    .header-with-search{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__logo{
+        width: unset;
+    }
+    .header__cart{
+        width: unset ;
+        padding:0 12px;
+    }
+    .header__cart-notice{
+        right: calc(100% - 50px);
+    }
+    .header{
+        height: unset;
+    }
+    .app__content{
+        margin-top: -2%;
+        padding:0;
+    }
+    .header__search{
+        position: absolute;
+        left: -8px;
+        right: 0;
+        top: 100%;
+        padding: 0 16px;
+        animation:mobileSearchSideIn linear 0.3s;
+        display: none;
+    }
+    @keyframes mobileSearchSideIn {
+        from{
+            top:50%;
+        }
+        to {
+            top:100%;
+        }
+    }
+    .header__search-history {
+        position: fixed;
+        width: 100%;
+        top: calc(var(--header-height) +  9px);
+        left: 0;
+        right: 0;
+    }
+    .pagination-item{
+        margin:0;
+    }
+    .header__mobile-search{
+        display: block;
+    } 
+    .row-padding{
+        padding:0 16px;
+    }
+    .footer__heading{
+        text-align: center;
+    }
+    .footer-item{
+        text-align: center;
+    }
+}
+
+
